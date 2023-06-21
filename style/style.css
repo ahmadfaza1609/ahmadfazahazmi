@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Pacifico&family=Poppins&family=Roboto:wght@500&display=swap');
+
+/* * {
+    box-sizing: content-box;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #db8f00;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #f59f00;
+}
+
+/* navbar */
+.navbar{
+    z-index: 10;
+}
+.my-nav .nav-link{
+    color: aliceblue;
+    font-weight: normal;
+    font-size: .95rem;
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.my-nav .navbar-brand{
+    color: aliceblue;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar-toggler-icon{
+    color: aliceblue;
+}
+
+nav.sticky-top{
+    padding: 20px 8px;
+    background: rgb(13, 13, 14,0.78);
+    box-shadow: 0px 0px 20px rgb(17, 17, 17, 0.60);  
+}
+
+.nav-item .contact-me{
+    background: #f59f00;
+    border-radius: 50px;
+}
+
+/* Jumbotron CSS */
+.jumbotron {
+    height: 100vh;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+}
+
+.wrap {
+    /* max-width: 960px; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+    text-align: left;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.fullscreen-video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(12, 12, 12, 0.85);
+    opacity: 2;
+    align-items: center;
+    display: flex;
+}
+
+.header-content {
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.1rem;
+}
+
+.header-content h1{
+    padding-top: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 4.5rem;
+    width: 40%;
+    font-weight: 900;
+}
+
+.header-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: .75rem;
+    margin-bottom: 50px;
+    width: 40%;
+    color: rgb(195, 195, 195);
+}
+
+.jumbotron .model{
+    position: absolute;
+    max-height: 100vh;
+    max-width: 100vw;
+    left: 50%;
+    top: -7.6%;
+    bottom: 0px;
+    transform: translateX(-7.6%);
+}
+
+.jumbotron .model img{
+    position: absolute;
+    height: 750px;
+    min-width: 20%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* footer */
+footer{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(24, 24, 24);
+    font-size: .85rem;
+    font-weight: 400;
+}
+
+
+/* responsive */
