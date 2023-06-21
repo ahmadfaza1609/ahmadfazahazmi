@@ -168,3 +168,52 @@ footer{
 
 
 /* responsive */
+@media only screen and (max-width: 768px) {
+    .header-content h2{
+        font-family: 'Pacifico', cursive;
+        font-size: 1.9rem;
+    }
+
+    .header-content h1{
+        padding-top: 10px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 3.8rem;
+        font-weight: 900;
+        width: 100%;
+    }
+
+    .header-content p{
+        font-family: 'Poppins', sans-serif;
+        font-size: .75rem;
+        margin-bottom: 50px;
+        width: 100%;
+        color: rgb(195, 195, 195);
+    }
+
+    .jumbotron .model{
+        position: absolute;
+        max-height: 100vh;
+        max-width: 100vw;
+        margin: auto;
+        left: -40px;
+        top: auto;
+        bottom: 0px;
+        transform: translateX(-7.6%);
+    }
+
+    .jumbotron .model img{
+        position: relative;
+        height: 750px;
+        min-width: 0%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+
+    footer{
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        background-color: rgb(24, 24, 24);
+        font-size: .75rem;
+        font-weight: 400;
+    }
+}
