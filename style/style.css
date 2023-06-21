@@ -73,6 +73,7 @@ nav.sticky-top{
     display: flex;
     color: aliceblue;
     align-items: center;
+    overflow: hidden;
 }
 
 .wrap {
