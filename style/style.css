@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Pacifico&family=Poppins&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* * {
-    box-sizing: content-box;
-} */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 
 body {
     margin: 0;
@@ -10,6 +12,24 @@ body {
     line-height: 1.5rem;
     overflow-y: overlay;
     overflow-x: hidden;
+}
+
+.btn{
+    background-color: #FFA41B !important;
+    color: white !important;
+    padding: 15px 30px !important;
+    border-radius: 50px !important;
+    font-weight: 500 !important;
+    font-size: 1.125rem !important;
+}
+
+.btn:focus{
+    box-shadow: none !important;
+}
+
+.btn:hover{
+    background-color: #f59f00 !important;
+    transition: .8ms !important;
 }
 
 /* Scrollbar */
@@ -24,7 +44,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #db8f00;
+    background: #FFA41B;
     border-radius: 50px;
 }
 
@@ -35,18 +55,18 @@ body {
 
 /* navbar */
 .navbar{
-    z-index: 10;
+    z-index: 100;
 }
-.my-nav .nav-link{
-    color: aliceblue;
+.nav-link{
+    /* color: aliceblue; */
     font-weight: normal;
     font-size: .95rem;
     margin-left: 30px;
     font-family: 'Poppins', sans-serif;
 }
 
-.my-nav .navbar-brand{
-    color: aliceblue;
+.navbar-brand{
+    /* color: aliceblue; */
     font-weight: 900;
     text-transform: capitalize;
     font-family: 'Pacifico', cursive;
@@ -59,162 +79,52 @@ body {
 nav.sticky-top{
     padding: 20px 8px;
     background: rgb(13, 13, 14,0.78);
-    box-shadow: 0px 0px 20px rgb(17, 17, 17, 0.60);  
+    box-shadow: 0px 0px 15px rgb(17, 17, 17, 0.20);  
 }
 
-.nav-item .contact-me{
-    background: #f59f00;
-    border-radius: 50px;
+/* root content */
+.title-menu{
+    text-transform: uppercase;
+    font-size: .95rem;
+    letter-spacing: .154rem;
+    font-weight: 500;
 }
 
-/* Jumbotron CSS */
-.jumbotron {
-    height: 100vh;
-    display: flex;
-    color: aliceblue;
-    align-items: center;
-    overflow: hidden;
+.header-content{
+    font-size: 1.8rem !important;
+    font-weight: 700;
 }
 
-.wrap {
-    /* max-width: 960px; */
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin: auto;
-    text-align: left;
+.paragraf-content{
+    font-size: .75rem !important;
+    font-weight: 500;
+    margin: 0 200px;
 }
 
-.fullscreen-video-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* hero section */
+#hero-section{
     height: 100vh;
     width: 100%;
-
 }
 
-.fullscreen-video-wrap video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.header-overlay {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(12, 12, 12, 0.85);
-    opacity: 2;
-    align-items: center;
-    display: flex;
-}
-
-.header-content {
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-content h2{
-    font-family: 'Pacifico', cursive;
-    font-size: 2.1rem;
-}
-
-.header-content h1{
-    padding-top: 10px;
-    font-family: 'Poppins',sans-serif;
-    font-size: 4.5rem;
-    width: 40%;
-    font-weight: 900;
-}
-
-.header-content p{
+#hero-section h1{
     font-family: 'Poppins', sans-serif;
-    font-size: .75rem;
-    margin-bottom: 50px;
-    width: 40%;
-    color: rgb(195, 195, 195);
+    font-weight: 900 !important;
+    font-size: 2.7rem !important;
 }
 
-.jumbotron .model{
-    position: absolute;
-    max-height: 100vh;
-    max-width: 100vw;
-    left: 50%;
-    top: -7.6%;
-    bottom: 0px;
-    transform: translateX(-7.6%);
+.img-hero{
+    height: 100%;
 }
-
-.jumbotron .model img{
-    position: absolute;
-    height: 750px;
-    min-width: 20%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-}
-
 
 
 /* footer */
 footer{
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(24, 24, 24);
     font-size: .85rem;
-    font-weight: 400;
 }
 
 
 /* responsive */
 @media only screen and (max-width: 768px) {
-    .header-content h2{
-        font-family: 'Pacifico', cursive;
-        font-size: 1.9rem;
-    }
 
-    .header-content h1{
-        padding-top: 10px;
-        font-family: 'Poppins',sans-serif;
-        font-size: 3.8rem;
-        font-weight: 900;
-        width: 100%;
-    }
-
-    .header-content p{
-        font-family: 'Poppins', sans-serif;
-        font-size: .75rem;
-        margin-bottom: 50px;
-        width: 100%;
-        color: rgb(195, 195, 195);
-    }
-
-    .jumbotron .model{
-        position: absolute;
-        max-height: 100vh;
-        max-width: 100vw;
-        margin: auto;
-        left: -40px;
-        top: auto;
-        bottom: 0px;
-        transform: translateX(-7.6%);
-    }
-
-    .jumbotron .model img{
-        position: relative;
-        height: 750px;
-        min-width: 0%;
-        object-fit: cover;
-        background-repeat: no-repeat;
-    }
-
-    footer{
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        background-color: rgb(24, 24, 24);
-        font-size: .75rem;
-        font-weight: 400;
-    }
 }
